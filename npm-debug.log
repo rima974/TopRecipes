@@ -1,0 +1,88 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/Rima/.meteor/packages/meteor-tool/.1.4.2_7.73syov++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/bin/node',
+1 verbose cli   '/Users/Rima/.meteor/packages/meteor-tool/.1.4.2_7.73syov++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '–save',
+1 verbose cli   'react-router' ]
+2 info using npm@3.10.9
+3 info using node@v4.7.3
+4 error arg Argument starts with non-ascii dash, this is probably invalid: [ '–save', 'react-router' ]
+5 silly loadCurrentTree Starting
+6 silly install loadCurrentTree
+7 silly install readLocalPackageData
+8 silly fetchPackageMetaData –save
+9 silly fetchPackageMetaData react-router
+10 silly fetchOtherPackageData –save
+11 silly cache add args [ '–save', null ]
+12 verbose cache add spec –save
+13 silly fetchNamedPackageData react-router
+14 silly mapToRegistry name react-router
+15 silly mapToRegistry using default registry
+16 silly mapToRegistry registry https://registry.npmjs.org/
+17 silly mapToRegistry data Result {
+17 silly mapToRegistry   raw: 'react-router',
+17 silly mapToRegistry   scope: null,
+17 silly mapToRegistry   escapedName: 'react-router',
+17 silly mapToRegistry   name: 'react-router',
+17 silly mapToRegistry   rawSpec: '',
+17 silly mapToRegistry   spec: 'latest',
+17 silly mapToRegistry   type: 'tag' }
+18 silly mapToRegistry uri https://registry.npmjs.org/react-router
+19 silly cache add parsed spec Result {
+19 silly cache add   raw: '–save',
+19 silly cache add   scope: null,
+19 silly cache add   escapedName: null,
+19 silly cache add   name: null,
+19 silly cache add   rawSpec: '–save',
+19 silly cache add   spec: '/Users/Rima/top-recettes/–save',
+19 silly cache add   type: 'local' }
+20 error addLocal Could not install /Users/Rima/top-recettes/–save
+21 silly fetchPackageMetaData Error: ENOENT: no such file or directory, open '/Users/Rima/top-recettes/–save'
+21 silly fetchPackageMetaData     at Error (native)
+21 silly fetchPackageMetaData  error for –save { [Error: ENOENT: no such file or directory, open '/Users/Rima/top-recettes/–save']
+21 silly fetchPackageMetaData   errno: -2,
+21 silly fetchPackageMetaData   code: 'ENOENT',
+21 silly fetchPackageMetaData   syscall: 'open',
+21 silly fetchPackageMetaData   path: '/Users/Rima/top-recettes/–save' }
+22 verbose request uri https://registry.npmjs.org/react-router
+23 verbose request no auth needed
+24 info attempt registry request try #1 at 15:18:06
+25 verbose request id 67bc199989b2dcc0
+26 http request GET https://registry.npmjs.org/react-router
+27 info retry will retry, error on last attempt: TypeError: The header content contains invalid characters
+28 info attempt registry request try #2 at 15:18:16
+29 http request GET https://registry.npmjs.org/react-router
+30 info retry will retry, error on last attempt: TypeError: The header content contains invalid characters
+31 info attempt registry request try #3 at 15:19:16
+32 http request GET https://registry.npmjs.org/react-router
+33 silly fetchPackageMetaData TypeError: The header content contains invalid characters
+33 silly fetchPackageMetaData     at ClientRequest.OutgoingMessage.setHeader (_http_outgoing.js:363:13)
+33 silly fetchPackageMetaData     at new ClientRequest (_http_client.js:79:14)
+33 silly fetchPackageMetaData     at Object.exports.request (http.js:31:10)
+33 silly fetchPackageMetaData     at Object.socket.once.exports.request (https.js:182:15)
+33 silly fetchPackageMetaData     at Request.start (/Users/Rima/.meteor/packages/meteor-tool/.1.4.2_7.73syov++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/node_modules/request/request.js:740:32)
+33 silly fetchPackageMetaData     at Request.end (/Users/Rima/.meteor/packages/meteor-tool/.1.4.2_7.73syov++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/node_modules/request/request.js:1398:10)
+33 silly fetchPackageMetaData     at end (/Users/Rima/.meteor/packages/meteor-tool/.1.4.2_7.73syov++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/node_modules/request/request.js:567:14)
+33 silly fetchPackageMetaData     at Immediate._onImmediate (/Users/Rima/.meteor/packages/meteor-tool/.1.4.2_7.73syov++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/node_modules/request/request.js:581:7)
+33 silly fetchPackageMetaData     at processImmediate [as _immediateCallback] (timers.js:396:17)
+33 silly fetchPackageMetaData  error for react-router [TypeError: The header content contains invalid characters]
+34 silly rollbackFailedOptional Starting
+35 silly rollbackFailedOptional Finishing
+36 silly runTopLevelLifecycles Finishing
+37 silly install printInstalled
+38 verbose stack Error: ENOENT: no such file or directory, open '/Users/Rima/top-recettes/–save'
+38 verbose stack     at Error (native)
+39 verbose cwd /Users/Rima/top-recettes
+40 error Darwin 15.6.0
+41 error argv "/Users/Rima/.meteor/packages/meteor-tool/.1.4.2_7.73syov++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/bin/node" "/Users/Rima/.meteor/packages/meteor-tool/.1.4.2_7.73syov++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/bin/npm" "install" "–save" "react-router"
+42 error node v4.7.3
+43 error npm  v3.10.9
+44 error path /Users/Rima/top-recettes/–save
+45 error code ENOENT
+46 error errno -2
+47 error syscall open
+48 error enoent ENOENT: no such file or directory, open '/Users/Rima/top-recettes/–save'
+49 error enoent ENOENT: no such file or directory, open '/Users/Rima/top-recettes/–save'
+49 error enoent This is most likely not a problem with npm itself
+49 error enoent and is related to npm not being able to find a file.
+50 verbose exit [ -2, true ]
