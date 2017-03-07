@@ -1,14 +1,19 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { Router, Route, browserHistory } from 'react-router';
+import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 
+import { App } from '../../ui/layouts/app.jsx';
 import { Dashboard } from '../../ui/components/recettes/dashboard.jsx';
+import LoginRegistration from  '../../ui/components/loginRegistration.jsx';
 
 Meteor.startup( () => {
-  render(
-    <Router history={browserHistory}>
-      <Router path="/" component={ Dashboard } />
-    </Router>,
-    document.getElementById('render-target')
-  );
+	render(
+		<Router history={browserHistory}>
+			<Route path="/" component={ App }>
+				{Meteor.userId() ? <IndexRoute component={ Dashboard } /> : <IndexRoute component={ LoginRegistration } /> }
+				<Route path="/login" component={ LoginRegistration } />
+			</Route>
+		</Router>,
+		document.getElementById('render-target')
+	);
 });
